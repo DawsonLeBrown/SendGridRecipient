@@ -12,7 +12,7 @@ Log Configuration
 	<!-- Outputters -->
 	<outputter name="console" type="StdoutOutputter" level="DEBUG" >
 		<formatter type="Log4r::PatternFormatter">
-			<pattern>=>[%5l %d] %C: %M [%t]</pattern>
+			<pattern>%5l\t%d\t%C:\t%M</pattern>
 		</formatter>
 	</outputter>
 
@@ -27,6 +27,7 @@ Log Configuration
 	<logger name="my_log"
                 level="ALL" additive="false" trace="true">
 		<outputter>rfo</outputter>
+		<outputter>StdoutOutputter</outputter>
 	</logger>
 
 </log4r_config>
