@@ -27,7 +27,7 @@ Log Configuration
 	<logger name="my_log"
                 level="ALL" additive="false" trace="true">
 		<outputter>rfo</outputter>
-		<outputter>StdoutOutputter</outputter>
+		<outputter>console</outputter>
 	</logger>
 
 </log4r_config>
