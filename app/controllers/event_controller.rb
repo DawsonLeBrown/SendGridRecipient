@@ -11,4 +11,6 @@ class EventController < ApplicationController
 	@my_logger = Log4r::Logger["my_log"]
       	@my_logger.info :event => [request.env, params]
   end
+  def list
+  end
 end
